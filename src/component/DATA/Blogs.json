@@ -1,0 +1,38 @@
+{
+    "leftBlog": {
+        "category": "Fashion",
+        "title": "The perfect summer sweater that you can wear!",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+        "image": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000"
+    },
+    "middleBlogs": [
+        {
+            "img": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000",
+            "date": "Aug 18",
+            "title": "Cristiano Ronaldo of Juventus FC looks dejected during the..."
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000",
+            "date": "Jan 18",
+            "title": "Barcelona v Bayern Munich"
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000",
+            "date": "Aug 18",
+            "title": "Cristiano Ronaldo of Juventus FC looks dejected during the..."
+        },
+        {
+            "img": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000",
+            "date": "July 23",
+            "title": "Barcelona v Bayern Munich - UEFA Champions League"
+        }
+    ],
+    "rightBlog": [
+        {
+            "category": "Fashion",
+            "title": "The perfect summer sweater that you can wear!",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "image": "https://images.unsplash.com/photo-1597935526289-3fb74b52e2ae?fm=jpg&q=60&w=3000"
+        }
+    ]
+}

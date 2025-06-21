@@ -1,0 +1,12 @@
+bg-Black-----------------
+text color:- #b728ff
+
+href="https://ishan-web-dev.github.io/Ishan-Resume/";
+
+
+----List Of Pages -----
+
+1. Page of blogs :- In Waiting ,
+2. page of contact :- Fine, Done , 
+3. page of Hero Section :- fine , done ,
+4. Services sction / Page :- done 
