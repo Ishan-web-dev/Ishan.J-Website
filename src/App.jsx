@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Ishan.J-Website">
         <ScrollToTop />
         <Navbar />
         <Routes>
