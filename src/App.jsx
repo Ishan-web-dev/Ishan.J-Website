@@ -1,29 +1,28 @@
-import reactLogo from './assets/react.svg';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Head from './component/Head/Home';
-import Navbar from './component/Head/Navbar/Navbar';
-import Footer from './component/Head/Footer/Footer';
-import Contact1 from './component/Pages/Contact/Contact';
-import Welcome from './component/Pages/Welcome/Welcome';
-import About from './component/Pages/About/About';
-import Services from './component/Pages/Services/Services';
-import PersonalInfo from './component/Pages/About/PersonalInfo';
-import Banner from './component/Pages/Banner/Banner';
-import Contact from './component/Pages/Contact/Contact';
-import ScrollToTop from './component/Pages/ScrollToTop/ScrollToTop';
-import PersonalBloges from './component/Pages/Bloges/PersonalBloges';
-import Gride from './component/Pages/Grides/Gride';
-import Review from './component/Pages/Review/Review';
-import GridAbout from './component/Layout/GrdeDesigns/GridAbout';
-import ExpertDetails from './component/Layout/Details/ExpertDetails';
-import Project from './component/Pages/Project/Project';
+import reactLogo from "./assets/react.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Head from "./component/Head/Home";
+import Navbar from "./component/Head/Navbar/Navbar";
+import Footer from "./component/Head/Footer/Footer";
+import Contact1 from "./component/Pages/Contact/Contact";
+import Welcome from "./component/Pages/Welcome/Welcome";
+import About from "./component/Pages/About/About";
+import Services from "./component/Pages/Services/Services";
+import PersonalInfo from "./component/Pages/About/PersonalInfo";
+import Banner from "./component/Pages/Banner/Banner";
+import Contact from "./component/Pages/Contact/Contact";
+import ScrollToTop from "./component/Pages/ScrollToTop/ScrollToTop";
+import PersonalBloges from "./component/Pages/Bloges/PersonalBloges";
+import Gride from "./component/Pages/Grides/Gride";
+import Review from "./component/Pages/Review/Review";
+import GridAbout from "./component/Layout/GrdeDesigns/GridAbout";
+import ExpertDetails from "./component/Layout/Details/ExpertDetails";
+import Project from "./component/Pages/Project/Project";
 
 function App() {
-
   return (
     <>
-      {/* <BrowserRouter basename="/Ishan.J-Website"> */}
-      <BrowserRouter>
+      <BrowserRouter basename="/Ishan.J-Website">
+        {/* <BrowserRouter> */}
         <ScrollToTop />
         <Navbar />
         <Routes>
@@ -47,9 +46,8 @@ function App() {
         <Gride />
         <Footer />
       </BrowserRouter>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
