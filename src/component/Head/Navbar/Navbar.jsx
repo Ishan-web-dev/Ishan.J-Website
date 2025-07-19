@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const NavbarLinks = [
-  { id: 1, name: 'Home', link: '/', path: '/' },
-  { id: 2, name: 'About', link: 'about', path: '/about' },
-  { id: 3, name: 'Services', link: 'services', path: '/Services' },
-  { id: 4, name: 'Review', link: 'review', path: '/Review' },
-  { id: 5, name: 'Bloges', link: 'Blogs', path: '/PersonalBloges' },
-  { id: 6, name: 'Contact Us', link: 'contact', path: '/Contact' },
+  { id: 1, name: "Home", link: "/", path: "/" },
+  { id: 2, name: "About", link: "about", path: "/about" },
+  { id: 3, name: "Services", link: "services", path: "/Services" },
+  { id: 4, name: "Review", link: "review", path: "/Review" },
+  { id: 5, name: "Projects", link: "Projects", path: "/Projects" },
+  // { id: 5, name: 'Bloges', link: 'Blogs', path: '/PersonalBloges' },
+  { id: 6, name: "Contact Us", link: "contact", path: "/Contact" },
 ];
 
 const Navbar = () => {
@@ -34,8 +35,8 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   useEffect(() => {
     // Automatically close mobile menu on route change
@@ -43,7 +44,11 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black' : 'bg-[#0000005f]'} navbar-shadow Kodchasan`}>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-black" : "bg-[#0000005f]"
+      } navbar-shadow Kodchasan`}
+    >
       <div className="container mx-auto px-9 py-4 flex justify-between items-center">
         <div className="text-2xl font-extrabold text-white kodchasan-light">
           <Link to="/">Ishan.j</Link>
@@ -73,12 +78,32 @@ const Navbar = () => {
         <div className="md:hidden text-white">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -86,8 +111,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          } bg-black shadow-md`}
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        } bg-black shadow-md`}
       >
         <ul className="flex flex-col items-center gap-4 py-4">
           {NavbarLinks.map((item) => (

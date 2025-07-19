@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import G1 from "../../../assets/Img/G1.jpg"
 
 const AboutMe = () => {
@@ -50,16 +51,12 @@ const AboutMe = () => {
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     {/* Primary Button */}
-                    <a
-                        href="#projects"
-                        onClick={(e) => {
-                            e.preventDefault(); // prevent default scroll/navigation
-                            alert("Coming Soon");
-                        }}
+                    <Link
+                        to="/Projects"
                         className="bg-gradient-to-r from-black to-[#b728ff] text-white font-semibold py-2.5 px-6 rounded-xl shadow-md hover:from-[#b728ff] hover:to-black transition-all duration-300 ease-in-out"
                     >
                         See Projects
-                    </a>
+                    </Link>
 
 
                     {/* Secondary Button */}

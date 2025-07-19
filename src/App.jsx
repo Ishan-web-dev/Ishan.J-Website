@@ -16,16 +16,18 @@ import Gride from './component/Pages/Grides/Gride';
 import Review from './component/Pages/Review/Review';
 import GridAbout from './component/Layout/GrdeDesigns/GridAbout';
 import ExpertDetails from './component/Layout/Details/ExpertDetails';
+import Project from './component/Pages/Project/Project';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter basename="/Ishan.J-Website">
+      {/* <BrowserRouter basename="/Ishan.J-Website"> */}
+      <BrowserRouter>
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path="/Welcome" element={<Welcome />} />
+          {/* <Route path="/Welcome" element={<Welcome />} /> */}
           <Route path="/" element={<Head />} />
           <Route path="/Navbar" element={<Navbar />} />
           <Route path="/Contact1" element={<Contact1 />} />
@@ -40,6 +42,7 @@ function App() {
           <Route path="/Review" element={<Review />} />
           <Route path="/GridAbout" element={<GridAbout />} />
           <Route path="/ExpertDetails" element={<ExpertDetails />} />
+          <Route path="/Projects" element={<Project />} />
         </Routes>
         <Gride />
         <Footer />
