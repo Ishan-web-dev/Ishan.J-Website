@@ -1,10 +1,9 @@
-"homepage" : "https://Ishan.J-Website.github.io/Ishan.J-Website.git"
-
 {
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Ishan.J-Website.github.io/Ishan.J-Website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
